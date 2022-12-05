@@ -3,7 +3,13 @@
   "version": "2.3.0",
   "description": "This bot determines an abnormally price changes for the uniswap-like pools using ML.",
   "chainIds": [
-    1
+    1,
+    10,
+    56,
+    137,
+    250,
+    42161,
+    43114
   ],
   "scripts": {
     "postinstall": "python3 -m pip install -r requirements_dev.txt",
