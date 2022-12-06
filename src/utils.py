@@ -1,4 +1,4 @@
-from src.config import ETHER_protocols, POLYGON_protocols, AVALANCHE_protocols, known_contracts
+from src.config import ETHER_protocols, POLYGON_protocols, AVALANCHE_protocols, OPTIMISM_protocols, ARBITRUM_protocols, FANTOM_protocols, BSC_protocols, known_contracts
 
 
 def extract_argument(event: dict, argument: str) -> any:
@@ -14,8 +14,16 @@ def extract_argument(event: dict, argument: str) -> any:
 def get_protocols_by_chain(chain_id):
     if chain_id == 1:
         return ETHER_protocols
+    elif chain_id == 10:
+        return OPTIMISM_protocols
+    elif chain_id == 56:
+        return BSC_protocols
     elif chain_id == 137:
         return POLYGON_protocols
+    elif chain_id == 250:
+        return FANTOM_protocols
+    elif chain_id == 42161:
+        return ARBITRUM_protocols
     elif chain_id == 43114:
         return AVALANCHE_protocols
 

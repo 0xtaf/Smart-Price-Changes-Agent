@@ -46,10 +46,10 @@ BSC_protocols = {
 
 # Specify your own protocols for the OPTIMISM here
 OPTIMISM_protocols = {
-
+    "Uniswap": "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
 }
 
 # Specify your own protocols for the ARBITRUM here
 ARBITRUM_protocols = {
-
+    "Uniswap": "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
 }
